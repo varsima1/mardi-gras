@@ -1,0 +1,59 @@
+.box {
+  width: 1000px;
+  min-height: 500px;
+  margin: 50px auto;
+  background: $white;
+  border-radius: 7px;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+}
+.box .heading {
+  background: $purple;
+  border-radius: 7px 7px 0px 0px;
+  padding: 10px;
+  color: $white;
+  text-align: center;
+}
+
+.about {
+  padding: 0px 20px 20px;
+}
+.a {
+  background-color: transparent;
+  height: 40px;
+}
+
+@media (max-width: 1200px) {
+  .box {
+    width: 500px;
+    height: 800px;
+    overflow: hidden;
+    overflow-y: scroll;
+  }
+  .a {
+    height: 180px;
+  }
+}
+@media (max-width: 800px) {
+  .box {
+    width: 500px;
+    height: 800px;
+    overflow: hidden;
+    overflow-y: scroll;
+  }
+}
+@media (max-width: 500px) {
+  .box {
+    width: 400px;
+    height: 800px;
+    overflow: hidden;
+    overflow-y: scroll;
+  }
+}
+@media (max-width: 400px) {
+  .box {
+    width: 350px;
+    height: 800px;
+    overflow: hidden;
+    overflow-y: scroll;
+  }
+}

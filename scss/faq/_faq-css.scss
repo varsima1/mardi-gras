@@ -1,0 +1,74 @@
+.f-button {
+  background-color: goldenrod;
+  color: $purple;
+}
+summary {
+  font-family: "Henny Penny";
+}
+.box {
+  width: 1500px;
+  min-height: 80vh;
+  margin: 50px auto;
+  background: $white;
+  border-radius: 7px;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.box .heading {
+  background: $purple;
+  border-radius: 7px 7px 0px 0px;
+  padding: 10px;
+  color: $white;
+  text-align: center;
+}
+
+.faqs {
+  padding: 0px 20px 20px;
+}
+
+::-webkit-details-marker {
+  float: right;
+  margin-top: 3px;
+}
+
+details {
+  background: $white;
+  padding: 10px 20px;
+  border-radius: 7px;
+  margin-top: 20px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+details summary {
+  outline: none;
+}
+.a {
+  height: 80px;
+  background-color: transparent;
+}
+@media (max-width: 900px) {
+  .box {
+    height: 500px;
+    width: 700px;
+    overflow: hidden;
+    overflow-y: scroll;
+  }
+}
+@media (max-width: 500px) {
+  .box {
+    height: 500px;
+    width: 400px;
+    overflow: hidden;
+    overflow-y: scroll;
+  }
+}
+@media (max-width: 400px) {
+  .box {
+    height: 500px;
+    width: 350px;
+    overflow: hidden;
+    overflow-y: scroll;
+  }
+}

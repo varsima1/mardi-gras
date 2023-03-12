@@ -1,0 +1,95 @@
+.heading {
+  border-bottom: $black 1px solid;
+}
+
+.overlay {
+  width: 100%;
+  margin-bottom: 70px;
+}
+
+form {
+  max-width: 550px;
+  height: 800px;
+  width: 90%;
+  background-color: $white;
+  margin: 17vh auto 0 auto;
+  padding: 40px;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+h1 {
+  margin: 0;
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin: 20px 0;
+}
+
+input,
+textarea {
+  width: 450px;
+  padding: 10px;
+  box-sizing: border-box;
+  outline: none;
+  resize: none;
+  border: none;
+  border-bottom: 1px solid $white;
+}
+input[type="text"]:focus,
+textarea:focus {
+  border-bottom: 1px solid rgb(255, 0, 106);
+}
+
+textarea::-webkit-scrollbar {
+  width: 4px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 0, 106);
+}
+
+.center {
+  margin-left: -550px;
+  text-align: center;
+}
+
+input[type="submit"] {
+  transform: translateX(250px);
+  width: 90%;
+  max-width: 200px;
+  background: linear-gradient(to right, rgb(255, 1, 166), rgb(255, 67, 61));
+  color: $white;
+  font-size: 17px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.error {
+  color: red;
+}
+
+.error-border {
+  border-bottom: 1px solid red;
+}
+
+#success {
+  width: 100px;
+  color: #28a745;
+  margin-left: 730px;
+}
+
+@media (max-width: 600px) {
+  input,
+  textarea {
+    width: 300px;
+  }
+}
+@media (max-width: 600px) {
+  input,
+  textarea {
+    width: 200px;
+  }
+}

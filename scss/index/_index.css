@@ -1,0 +1,543 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: "Pattaya";
+  font-family: "Henny Penny";
+}
+
+summary {
+  font-family: "Pattaya";
+  font-family: "Henny Penny";
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+}
+
+/* first 3 color */
+.box1 {
+  width: 100%;
+  height: 90px;
+  border: 1px solid #0d0d0d;
+  background: linear-gradient(#f2cc0f 25%, #8cbf3f 50%, #9453a6 25%);
+  text-align: center;
+}
+
+.wtmgno {
+  transform: translateY(20px);
+}
+
+/*first 3 colors*/
+/*mayor container and about*/
+.mayor-container {
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  background-color: #f2cc0f;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.mayortxt {
+  width: 500px;
+}
+
+.mayorimg {
+  align-items: center;
+  width: 200px;
+  height: 200px;
+}
+
+.banner {
+  width: 500px;
+  height: 100px;
+  margin: 0px 0px 0px 50px;
+}
+
+.banner1 {
+  margin: 20px;
+}
+
+.about,
+.mayor,
+.banner1,
+.banner2 {
+  padding: 20px;
+}
+
+.banner1,
+.banner2 {
+  text-align: center;
+}
+
+/*mayor container and about*/
+/*places*/
+.places {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  background-color: #8cbf3f;
+  text-align: center;
+}
+
+.bar-drink,
+.restoran,
+.transport,
+.museum {
+  width: 50%;
+  padding: 10px;
+  position: relative;
+}
+
+.caption1,
+.caption2,
+.caption3,
+.caption4 {
+  position: absolute;
+  width: 500px;
+  height: 300px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #f2f2f2;
+  padding: 10px;
+  opacity: 0;
+  transform: translateX(50px);
+}
+
+.caption1:hover,
+.caption2:hover,
+.caption3:hover,
+.caption4:hover {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.img-places {
+  width: 500px;
+  height: 500px;
+  margin-bottom: 10px;
+}
+
+.banner3,
+.banner4 {
+  padding: 20px;
+  text-align: center;
+}
+
+/*place*/
+/*game*/
+.game {
+  width: 100%;
+  height: 800px;
+  text-align: center;
+  background-color: #9453a6;
+  text-decoration: none;
+  padding-top: 10px;
+  font-size: 1.2rem;
+}
+
+.gameb {
+  width: 250px;
+  height: 250px;
+  margin: 10px;
+  border: 0px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 40px;
+}
+
+/*banners*/
+.banner5-6 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  text-align: center;
+}
+
+.banner5,
+.banner6 {
+  padding: 20px;
+  margin: 20px;
+}
+
+/*banners*/
+/*game*/
+/*answer for game*/
+.outbox {
+  background-color: #f2cc0f;
+  width: 100%;
+  height: 1150px;
+}
+
+.f-button {
+  background-color: goldenrod;
+  color: #9453a6;
+}
+
+summary {
+  font-family: "Henny Penny";
+}
+
+.box {
+  background-color: #f2cc0f;
+  width: 1500px;
+  min-height: 500px;
+  margin: auto;
+  transform: translateY(100px);
+  background: #f2f2f2;
+  border-radius: 7px;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.box .heading {
+  background: #9453a6;
+  border-radius: 7px 7px 0px 0px;
+  padding: 10px;
+  color: #f2f2f2;
+  text-align: center;
+}
+
+.faqs {
+  padding: 0px 20px 20px;
+}
+
+::-webkit-details-marker {
+  float: right;
+  margin-top: 3px;
+}
+
+details {
+  background: #f2f2f2;
+  padding: 10px 20px;
+  border-radius: 7px;
+  margin-top: 20px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+details summary {
+  outline: none;
+}
+
+/*answer for game*/
+/*banner 7 8 */
+.banner7-8 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  background-color: #f2cc0f;
+  width: 100%;
+  text-align: center;
+}
+
+.banner7,
+.banner8 {
+  padding: 20px;
+  margin: 20px;
+}
+
+/*banner 7 8 */
+@media (max-width: 1280px) {
+  .game {
+    height: 1000px;
+  }
+  .banner5-6 {
+    grid-template-columns: 1fr;
+  }
+  .banner7-8 {
+    grid-template-columns: 1fr;
+  }
+  .image-caption {
+    opacity: 1;
+  }
+  .mayor-container {
+    grid-template-columns: 1fr;
+  }
+  .place-container {
+    grid-template-columns: 1fr;
+  }
+  .banner {
+    width: 300px;
+  }
+  .places {
+    display: block;
+  }
+  .caption1,
+  .caption2,
+  .caption3,
+  .caption4 {
+    opacity: 1;
+    width: 500px;
+    height: 300px;
+    transform: translateX(62px);
+  }
+}
+@media (max-width: 1042px) {
+  .game {
+    height: 1000px;
+  }
+  .banner5-6 {
+    grid-template-columns: 1fr;
+  }
+  .banner7-8 {
+    grid-template-columns: 1fr;
+  }
+  .image-caption {
+    opacity: 1;
+  }
+  .mayor-container {
+    grid-template-columns: 1fr;
+  }
+  .place-container {
+    grid-template-columns: 1fr;
+  }
+  .banner {
+    width: 300px;
+  }
+  .places {
+    display: block;
+  }
+  .caption1,
+  .caption2,
+  .caption3,
+  .caption4 {
+    opacity: 1;
+    width: 500px;
+    height: 300px;
+    transform: translateX(9px);
+  }
+  .outbox {
+    height: 1100px;
+  }
+  .banner7-8 {
+    padding: 10px;
+  }
+  .banner1,
+  .banner2,
+  .banner3,
+  .banner4 {
+    transform: translateX(0px);
+  }
+}
+@media (max-width: 500px) {
+  .banner {
+    width: 300px;
+  }
+  .mayortxt {
+    width: 350px;
+  }
+  .about p {
+    width: 350px;
+    margin-left: -50px;
+  }
+  .img-places {
+    width: 450px;
+    height: 450px;
+  }
+  .gameb {
+    width: 200px;
+  }
+  .caption1,
+  .caption2,
+  .caption3,
+  .caption4 {
+    opacity: 1;
+    width: 450px;
+    height: 300px;
+    transform: translateX(8px);
+  }
+  .banner5-6 {
+    margin-left: 0px;
+  }
+  .banner7-8 {
+    margin-left: 0px;
+  }
+  .box {
+    height: 500px;
+    width: 400px;
+    overflow: hidden;
+    overflow-y: scroll;
+  }
+}
+@media (max-width: 450px) {
+  .banner {
+    width: 300px;
+  }
+  .mayortxt {
+    width: 350px;
+    padding-right: 80px;
+  }
+  .about p {
+    width: 350px;
+    margin-left: -50px;
+  }
+  .banner1 {
+    width: 300px;
+    margin-left: -50px;
+  }
+  .banner2 {
+    width: 300px;
+    margin-left: -50px;
+  }
+  .banner3 {
+    width: 300px;
+    margin-left: -50px;
+  }
+  .banner4 {
+    width: 300px;
+    margin-left: -50px;
+  }
+  .mayor {
+    width: 300px;
+    padding-right: 80px;
+  }
+  .mayor-container {
+    padding: 0;
+  }
+  .about {
+    padding-left: 50px;
+  }
+  .img-places {
+    width: 450px;
+    height: 400px;
+    margin-left: -10px;
+  }
+  .caption1,
+  .caption2,
+  .caption3,
+  .caption4 {
+    opacity: 1;
+    width: 450px;
+    height: 300px;
+    transform: translateX(-8px);
+  }
+  .banner7-8 {
+    margin-left: -50px;
+  }
+}
+@media (max-width: 430px) {
+  .banner {
+    width: 270px;
+  }
+  .mayortxt {
+    width: 270px;
+  }
+  .about p {
+    width: 270px;
+    margin-left: -50px;
+  }
+  .banner1 {
+    width: 200px;
+    margin-left: -100px;
+  }
+  .banner2 {
+    width: 200px;
+    margin-left: -100px;
+  }
+  .banner3 {
+    width: 200px;
+    margin-left: -100px;
+  }
+  .banner4 {
+    width: 200px;
+    margin-left: -100px;
+  }
+  .mayor {
+    width: 200px;
+  }
+  .caption1,
+  .caption2,
+  .caption3,
+  .caption4 {
+    opacity: 1;
+    width: 390px;
+    height: 300px;
+  }
+  .img-places {
+    width: 400px;
+    height: 320px;
+    margin-left: -30px;
+  }
+  .banner5-6 {
+    margin-left: -10px;
+  }
+}
+@media (max-width: 430px) and (max-width: 380px) {
+  .banner {
+    width: 270px;
+  }
+  .mayortxt {
+    width: 270px;
+  }
+  .about p {
+    width: 270px;
+    margin-left: -50px;
+  }
+  .banner1 {
+    width: 200px;
+    margin-left: -100px;
+  }
+  .banner2 {
+    width: 200px;
+    margin-left: -100px;
+  }
+  .banner3 {
+    width: 200px;
+    margin-left: -100px;
+  }
+  .banner4 {
+    width: 200px;
+    margin-left: -100px;
+  }
+  .mayor {
+    width: 200px;
+  }
+  .caption1,
+  .caption2,
+  .caption3,
+  .caption4 {
+    opacity: 1;
+    width: 350px;
+    height: 300px;
+  }
+  .img-places {
+    width: 350px;
+    height: 320px;
+    margin-left: -30px;
+  }
+  .banner5-6 {
+    margin-left: -10px;
+  }
+}
+@media (max-width: 1300px) {
+  .box {
+    height: 500px;
+    width: 700px;
+    overflow: hidden;
+    overflow-y: scroll;
+  }
+}
+@media (max-width: 500px) {
+  .box {
+    height: 500px;
+    width: 400px;
+    overflow: hidden;
+    overflow-y: scroll;
+  }
+}
+@media (max-width: 400px) {
+  .box {
+    height: 500px;
+    width: 350px;
+    overflow: hidden;
+    overflow-y: scroll;
+  }
+}/*# sourceMappingURL=_index.css.map */
